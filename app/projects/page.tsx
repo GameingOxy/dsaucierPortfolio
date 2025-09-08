@@ -77,7 +77,7 @@ export default function Projects() {
               </CardHeader>
               <CardContent>
                 <img
-                  src="LoomPicture.jpg"
+                  src="public/LoomPicture.jpg"
                   alt="LOOM Project Research Equipment"
                   className="w-full h-64 object-cover rounded-md mb-6"
                 />
@@ -144,7 +144,7 @@ export default function Projects() {
               </CardHeader>
               <CardContent>
                 <img
-                  src="BehindTree_InGameScreenShot.png"
+                  src="public/BehindTree_InGameScreenShot.png"
                   alt="Indie Game Development Screenshot"
                   className="w-full h-64 object-cover rounded-md mb-6"
                 />
@@ -225,7 +225,7 @@ export default function Projects() {
               </CardHeader>
               <CardContent>
                 <img
-                  src="OsuImage.jpg"
+                  src="public/OsuImage.jpg"
                   alt="Oregon State University Campus"
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
