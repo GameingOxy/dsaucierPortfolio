@@ -28,7 +28,7 @@ export default function About() {
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <img
-              src="DavyPortrait.png"
+              src="public/DavyPortrait.png"
               alt="David Saucier Profile"
               className="w-32 h-32 object-cover rounded-full mx-auto mb-6 border-4 border-primary/20"
             />
