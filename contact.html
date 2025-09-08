@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - David Saucier</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: '#ffffff',
+            foreground: '#475569',
+            card: '#ecfeff',
+            'card-foreground': '#164e63',
+            primary: '#164e63',
+            'primary-foreground': '#ffffff',
+            secondary: '#ea580c',
+            'secondary-foreground': '#ffffff',
+            muted: '#fefce8',
+            'muted-foreground': '#4b5563',
+            accent: '#ea580c',
+            'accent-foreground': '#ffffff',
+            border: '#e2e8f0',
+            input: '#f0f4f8',
+            ring: '#a0aec0'
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="min-h-screen bg-background">
+  <!-- Header -->
+  <header class="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4">
+      <nav class="flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 px-3 py-1 text-sm font-medium text-foreground hover:text-primary transition-colors">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+          Back to Home
+        </a>
+        <h1 class="text-2xl font-bold text-card-foreground">Contact</h1>
+        <div class="w-24"></div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Content -->
+  <section class="py-20 px-4">
+    <div class="container mx-auto max-w-4xl">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold mb-4">Let's Connect</h1>
+        <p class="text-xl text-muted-foreground">
+          I'm eager to leverage my technical skills and creativity to contribute to innovative projects. Let's
+          discuss opportunities in game development, IoT, or cross-cultural technology solutions.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <!-- Contact Information -->
+        <div class="bg-card border border-border rounded-lg p-6">
+          <div class="flex items-center gap-2 mb-4">
+            <i data-lucide="message-square" class="w-5 h-5"></i>
+            <h3 class="text-lg font-semibold">Get In Touch</h3>
+          </div>
+          <p class="text-sm text-muted-foreground mb-6">Ready to discuss opportunities and collaborate on exciting projects</p>
+          <div class="space-y-6">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                <i data-lucide="mail" class="w-5 h-5 text-primary"></i>
+              </div>
+              <div>
+                <p class="font-medium">Email</p>
+                <a href="mailto:Davyjsaucier@gmail.com" class="text-muted-foreground hover:text-primary transition-colors">
+                  Davyjsaucier@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                <i data-lucide="phone" class="w-5 h-5 text-primary"></i>
+              </div>
+              <div>
+                <p class="font-medium">Phone</p>
+                <a href="tel:+15034371080" class="text-muted-foreground hover:text-primary transition-colors">
+                  (503) 437-1080
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                <i data-lucide="map-pin" class="w-5 h-5 text-primary"></i>
+              </div>
+              <div>
+                <p class="font-medium">Location</p>
+                <p class="text-muted-foreground">Sheridan, Oregon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Links -->
+        <div class="bg-card border border-border rounded-lg p-6">
+          <h3 class="text-lg font-semibold mb-4">Professional Profiles</h3>
+          <p class="text-sm text-muted-foreground mb-4">Connect with me on professional platforms and view my work</p>
+          <div class="space-y-4">
+            <a href="mailto:DavyJSaucier@gmail.com" class="flex items-center gap-3 w-full p-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
+              <i data-lucide="mail" class="w-5 h-5"></i>
+              <div class="text-left">
+                <div class="font-medium">Send Email</div>
+                <div class="text-sm opacity-70">Direct communication</div>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/david-saucier-72b714339/" class="flex items-center gap-3 w-full p-4 border border-border bg-background text-foreground rounded-lg hover:bg-muted transition-colors">
+              <i data-lucide="linkedin" class="w-5 h-5"></i>
+              <div class="text-left flex-1">
+                <div class="font-medium">LinkedIn Profile</div>
+                <div class="text-sm opacity-70">Professional network</div>
+              </div>
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Areas of Interest -->
+      <div class="bg-card border border-border rounded-lg p-6">
+        <h3 class="text-lg font-semibold mb-4">Areas of Interest</h3>
+        <p class="text-sm text-muted-foreground mb-6">
+          I'm particularly interested in opportunities involving these technologies and domains
+        </p>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="text-center">
+            <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
+              <i data-lucide="gamepad-2" class="w-8 h-8 text-primary"></i>
+            </div>
+            <h4 class="font-semibold mb-2">Game Development</h4>
+            <p class="text-sm text-muted-foreground">
+              Unreal Engine, narrative design, character-driven mechanics, and immersive storytelling
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
+              <i data-lucide="code" class="w-8 h-8 text-primary"></i>
+            </div>
+            <h4 class="font-semibold mb-2">Software Engineering</h4>
+            <p class="text-sm text-muted-foreground">
+              Designing reliable systems, writing clean code, and solving complex problems through structured development.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
+              <i data-lucide="server" class="w-8 h-8 text-primary"></i>
+            </div>
+            <h4 class="font-semibold mb-2">Information Technology</h4>
+            <p class="text-sm text-muted-foreground">
+              Information technology, particularly in how infrastructure, security, and connectivity support effective software solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

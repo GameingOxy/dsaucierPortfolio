@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Saucier - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: '#ffffff',
+            foreground: '#475569',
+            card: '#ecfeff',
+            'card-foreground': '#164e63',
+            primary: '#164e63',
+            'primary-foreground': '#ffffff',
+            secondary: '#ea580c',
+            'secondary-foreground': '#ffffff',
+            muted: '#fefce8',
+            'muted-foreground': '#4b5563',
+            accent: '#ea580c',
+            'accent-foreground': '#ffffff',
+            border: '#e2e8f0',
+            input: '#f0f4f8',
+            ring: '#a0aec0'
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="min-h-screen bg-background">
+  <!-- Header -->
+  <header class="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4">
+      <nav class="flex items-center justify-between">
+        <h1 class="text-2xl font-bold text-card-foreground">David Saucier</h1>
+        <div class="flex items-center gap-4">
+          <a href="about.html" class="px-3 py-1 text-sm font-medium text-foreground hover:text-primary transition-colors">About</a>
+          <a href="projects.html" class="px-3 py-1 text-sm font-medium text-foreground hover:text-primary transition-colors">Projects</a>
+          <a href="contact.html" class="px-3 py-1 text-sm font-medium text-foreground hover:text-primary transition-colors">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-20 px-4">
+    <div class="container mx-auto text-center max-w-4xl">
+      <div class="mb-8">
+        <img
+          src="DavyPortrait.png"
+          alt="David Saucier Profile"
+          class="w-32 h-32 object-cover rounded-full mx-auto mb-6 border-4 border-primary/20"
+        />
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">David Saucier</h1>
+        <p class="text-xl md:text-2xl text-muted-foreground mb-8">
+          Aspiring Software Developer with expertise in IoT, game development, Web Development and Databases.
+        </p>
+        <div class="flex flex-wrap justify-center gap-3 mb-8">
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-secondary/10 text-secondary">
+            <i data-lucide="graduation-cap" class="w-4 h-4 mr-2"></i>
+            BS Computer Science
+          </span>
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-secondary/10 text-secondary">
+            <i data-lucide="languages" class="w-4 h-4 mr-2"></i>
+            Japanese Studies
+          </span>
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-secondary/10 text-secondary">
+            <i data-lucide="gamepad-2" class="w-4 h-4 mr-2"></i>
+            Unreal Engine
+          </span>
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-secondary/10 text-secondary">
+            <i data-lucide="flask-conical" class="w-4 h-4 mr-2"></i>
+            IoT Research
+          </span>
+        </div>
+        <div class="flex justify-center gap-4">
+          <a href="contact.html" class="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors">
+            Get In Touch
+          </a>
+          <a href="projects.html" class="inline-flex items-center px-6 py-3 border border-border bg-background text-foreground font-medium rounded-lg hover:bg-muted transition-colors">
+            View Projects
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-4 bg-card/30">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">About Me</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-2xl font-semibold mb-4 text-card-foreground">Academic & Professional Journey</h3>
+          <p class="text-muted-foreground mb-6 leading-relaxed">
+            I'm pursuing my Bachelor's Degree in Computer Science at Oregon State University (graduating June 2025),
+            where I've maintained Honor Roll status. My passion for Japanese culture led me to extensive language
+            studies from high school through university, completing coursework from Second-Year through Third-Year
+            Japanese plus cultural studies. I combine technical expertise with cross-cultural understanding to
+            create innovative solutions.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <i data-lucide="graduation-cap" class="w-5 h-5 text-primary"></i>
+              <span class="font-medium">BS Computer Science, Oregon State University (2020-2025)</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="languages" class="w-5 h-5 text-primary"></i>
+              <span class="font-medium">Extensive Japanese Language & Culture Studies</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="flask-conical" class="w-5 h-5 text-primary"></i>
+              <span class="font-medium">Research Developer at OPEnS Lab</span>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <div class="bg-card border border-border rounded-lg p-6">
+            <div class="flex items-center gap-2 mb-4">
+              <i data-lucide="gamepad-2" class="w-5 h-5"></i>
+              <h4 class="text-lg font-semibold">Game Development</h4>
+            </div>
+            <p class="text-muted-foreground">
+              I focus on creating games that combine storytelling, mechanics, and art into cohesive experiences. I
+              work with C++ and Unreal Engine for programming and design, while also bringing visual skills
+              through 3D modeling in Blender and 2D pixel art. I practice rapid prototyping through game jams,
+              where I experiment with new ideas, refine my workflow, and push myself to build engaging interactive
+              worlds under tight deadlines.
+            </p>
+          </div>
+          <div class="bg-card border border-border rounded-lg p-6">
+            <div class="flex items-center gap-2 mb-4">
+              <i data-lucide="languages" class="w-5 h-5"></i>
+              <h4 class="text-lg font-semibold">Japanese Language & Cultural Studies</h4>
+            </div>
+            <p class="text-muted-foreground">
+              My interest in Japanese language and culture began at Sheridan Japanese School, where I built a
+              strong foundation in communication and cultural understanding. I continued this journey at Oregon
+              State University, earning a Minor in Japanese through advanced language courses and cultural
+              studies. These experiences not only deepened my appreciation for Japanese culture but also
+              strengthened my adaptability, cross-cultural communication, and dedication to lifelong learning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Featured Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- LOOM Project -->
+        <div class="bg-card border border-border rounded-lg p-6 group hover:shadow-lg transition-shadow">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-2">
+              <i data-lucide="flask-conical" class="w-5 h-5"></i>
+              <h3 class="text-xl font-semibold">LOOM Arduino Library</h3>
+            </div>
+            <a href="https://github.com/OPEnSLab-OSU/Loom-V4" class="opacity-0 group-hover:opacity-100 transition-opacity p-2 hover:bg-muted rounded">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <p class="text-sm text-muted-foreground mb-4">OPEnS Lab Research Project (Sep 2024 - Jun 2025)</p>
+          <img src="LoomPicture.jpg" alt="LOOM Project" class="w-full h-48 object-cover rounded-md mb-4" />
+          <p class="text-muted-foreground mb-4">
+            Collaborated with a multidisciplinary team to develop LOOM, a modular and extensible Arduino library
+            for IoT sensor and actuator systems in environmental research. Contributed to system architecture
+            using C++, emphasizing modularity, low-power operation, and cross-device compatibility.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2 py-1 text-xs border border-border rounded">C++</span>
+            <span class="px-2 py-1 text-xs border border-border rounded">Arduino</span>
+            <span class="px-2 py-1 text-xs border border-border rounded">IoT</span>
+            <span class="px-2 py-1 text-xs border border-border rounded">Git/GitHub</span>
+            <span class="px-2 py-1 text-xs border border-border rounded">Environmental Research</span>
+          </div>
+        </div>
+
+        <!-- Indie Game Project -->
+        <div class="bg-card border border-border rounded-lg p-6 group hover:shadow-lg transition-shadow">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-2">
+              <i data-lucide="gamepad-2" class="w-5 h-5"></i>
+              <h3 class="text-xl font-semibold">Indie Game Development</h3>
+            </div>
+            <a href="https://www.youtube.com/watch?v=5RenHAticXo" class="opacity-0 group-hover:opacity-100 transition-opacity p-2 hover:bg-muted rounded">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <p class="text-sm text-muted-foreground mb-4">Personal Project (2022 - Present)</p>
+          <img src="BehindTree_InGameScreenShot.png" alt="Indie Game Project" class="w-full h-48 object-cover rounded-md mb-4" />
+          <p class="text-muted-foreground mb-4">
+            Designed and developed an original narrative adventure game with a 9-chapter structure centered on
+            emotional themes. Features a unique cast of party members with distinct gameplay mechanics, hybrid 2D
+            pixel art with 3D world design, and comprehensive game design documentation.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2 py-1 text-xs border border-border rounded">Unreal Engine</span>
+            <span class="px-2 py-1 text-xs border border-border rounded">Game Design</span>
+            <span class="px-2 py-1 text-xs border border-border rounded">2D/3D Art</span>
+            <span class="px-2 py-1 text-xs border border-border rounded">Narrative Design</span>
+            <span class="px-2 py-1 text-xs border border-border rounded">Prototype Development</span>
+          </div>
+        </div>
+
+        <!-- Academic Achievements -->
+        <div class="bg-card border border-border rounded-lg p-6 group hover:shadow-lg transition-shadow">
+          <div class="flex items-center gap-2 mb-4">
+            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+            <h3 class="text-xl font-semibold">Academic Excellence</h3>
+          </div>
+          <p class="text-sm text-muted-foreground mb-4">Oregon State University (2020-2025)</p>
+          <img src="OsuImage.jpg" alt="OSU Campus" class="w-full h-48 object-cover rounded-md mb-4" />
+          <p class="text-muted-foreground mb-4">
+            Bachelor of Science in Computer Science with Honor Roll achievement. Comprehensive coursework
+            including Data Structures, Algorithms, Software Engineering, Operating Systems, Database Management
+            and Japanese language and Culture Minor from Second-Year through Third-Year levels.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2 py-1 text-xs border border-border rounded">Honor Roll</span>
+            <span class="px-2 py-1 text-xs border border-border rounded">Software Engineering</span>
+            <span class="px-2 py-1 text-xs border border-border rounded">Database Systems</span>
+            <span class="px-2 py-1 text-xs border border-border rounded">Japanese Language</span>
+            <span class="px-2 py-1 text-xs border border-border rounded">Japanese Cultural</span>
+          </div>
+        </div>
+
+        <!-- Skills & Technologies -->
+        <div class="bg-card border border-border rounded-lg p-6 group hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold mb-4">Technical Skills</h3>
+          <p class="text-sm text-muted-foreground mb-4">Technologies & Languages</p>
+          <div class="space-y-4">
+            <div>
+              <h4 class="font-medium mb-2">Programming Languages</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2 py-1 text-xs border border-border rounded">C++</span>
+                <span class="px-2 py-1 text-xs border border-border rounded">C</span>
+                <span class="px-2 py-1 text-xs border border-border rounded">JavaScript</span>
+                <span class="px-2 py-1 text-xs border border-border rounded">Python</span>
+                <span class="px-2 py-1 text-xs border border-border rounded">HTML/CSS</span>
+                <span class="px-2 py-1 text-xs border border-border rounded">MYSQL</span>
+              </div>
+            </div>
+            <div>
+              <h4 class="font-medium mb-2">Technologies & Tools</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2 py-1 text-xs border border-border rounded">Unreal Engine</span>
+                <span class="px-2 py-1 text-xs border border-border rounded">Arduino</span>
+                <span class="px-2 py-1 text-xs border border-border rounded">Blender</span>
+                <span class="px-2 py-1 text-xs border border-border rounded">Visual Studio Code</span>
+                <span class="px-2 py-1 text-xs border border-border rounded">Git/GitHub</span>
+                <span class="px-2 py-1 text-xs border border-border rounded">IoT Development</span>
+              </div>
+            </div>
+            <div>
+              <h4 class="font-medium mb-2">Languages</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2 py-1 text-xs border border-border rounded">English (Native)</span>
+                <span class="px-2 py-1 text-xs border border-border rounded">Japanese (Limited Working)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-4 bg-card/30">
+    <div class="container mx-auto max-w-4xl text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Let's Connect</h2>
+      <p class="text-xl text-muted-foreground mb-8">
+        I'm eager to leverage my technical skills and creativity to contribute to innovative projects. Let's discuss
+        opportunities in game development, IoT, or cross-cultural technology solutions.
+      </p>
+      <div class="flex justify-center items-center gap-6 mb-8 text-muted-foreground">
+        <div class="flex items-center gap-2">
+          <i data-lucide="map-pin" class="w-4 h-4"></i>
+          <span>Sheridan, OR</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-lucide="phone" class="w-4 h-4"></i>
+          <span>(503) 437-1080</span>
+        </div>
+      </div>
+      <div class="flex justify-center gap-6 mb-12">
+        <a href="mailto:Davyjsaucier@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors">
+          <i data-lucide="mail" class="w-5 h-5"></i>
+          Email Me
+        </a>
+        <a href="https://www.linkedin.com/in/david-saucier-72b714339/" class="inline-flex items-center gap-2 px-6 py-3 border border-border bg-background text-foreground font-medium rounded-lg hover:bg-muted transition-colors">
+          <i data-lucide="linkedin" class="w-5 h-5"></i>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-border py-8 px-4">
+    <div class="container mx-auto text-center">
+      <p class="text-muted-foreground">© 2024 David Saucier. Built with passion and attention to detail.</p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

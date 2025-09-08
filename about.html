@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - David Saucier</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: '#ffffff',
+            foreground: '#475569',
+            card: '#ecfeff',
+            'card-foreground': '#164e63',
+            primary: '#164e63',
+            'primary-foreground': '#ffffff',
+            secondary: '#ea580c',
+            'secondary-foreground': '#ffffff',
+            muted: '#fefce8',
+            'muted-foreground': '#4b5563',
+            accent: '#ea580c',
+            'accent-foreground': '#ffffff',
+            border: '#e2e8f0',
+            input: '#f0f4f8',
+            ring: '#a0aec0'
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="min-h-screen bg-background">
+  <!-- Header -->
+  <header class="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4">
+      <nav class="flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 px-3 py-1 text-sm font-medium text-foreground hover:text-primary transition-colors">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+          Back to Home
+        </a>
+        <h1 class="text-2xl font-bold text-card-foreground">About David Saucier</h1>
+        <div class="w-24"></div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Content -->
+  <section class="py-20 px-4">
+    <div class="container mx-auto max-w-4xl">
+      <div class="text-center mb-12">
+        <img
+          src="DavyPortrait.png"
+          alt="David Saucier Profile"
+          class="w-32 h-32 object-cover rounded-full mx-auto mb-6 border-4 border-primary/20"
+        />
+        <h1 class="text-4xl font-bold mb-4">About Me</h1>
+        <p class="text-xl text-muted-foreground">
+          Aspiring Software Developer with a passion for IoT, game development, and cross-cultural technology solutions
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-card border border-border rounded-lg p-6">
+          <div class="flex items-center gap-2 mb-4">
+            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+            <h3 class="text-lg font-semibold">Education</h3>
+          </div>
+          <div class="space-y-4">
+            <div>
+              <h4 class="font-semibold">Bachelor of Science in Computer Science</h4>
+              <p class="text-muted-foreground">Oregon State University</p>
+              <div class="flex items-center gap-2 text-sm text-muted-foreground mt-1">
+                <i data-lucide="calendar" class="w-4 h-4"></i>
+                <span>September 2020 - June 2025</span>
+              </div>
+              <div class="flex items-center gap-2 text-sm mt-1">
+                <i data-lucide="award" class="w-4 h-4 text-primary"></i>
+                <span class="font-medium">Honor Roll Winter 2025</span>
+              </div>
+            </div>
+            <div>
+              <h4 class="font-semibold">Japanese Language Studies</h4>
+              <p class="text-muted-foreground">Extensive coursework from high school through university</p>
+              <div class="flex flex-wrap gap-1 mt-2">
+                <span class="px-2 py-1 text-xs border border-border rounded">Second-Year Japanese I-III</span>
+                <span class="px-2 py-1 text-xs border border-border rounded">Third-Year Japanese I-III</span>
+                <span class="px-2 py-1 text-xs border border-border rounded">Japanese Culture I-III</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-card border border-border rounded-lg p-6">
+          <div class="flex items-center gap-2 mb-4">
+            <i data-lucide="map-pin" class="w-5 h-5"></i>
+            <h3 class="text-lg font-semibold">Professional Summary</h3>
+          </div>
+          <p class="text-muted-foreground leading-relaxed">
+            I'm an aspiring software developer with hands-on experience in IoT projects, including developing an
+            Arduino library for environmental research. Skilled in C++, Unreal Engine, and problem-solving, with a
+            strong ability to learn quickly and adapt to new technologies. I'm eager to leverage my technical
+            skills and creativity to contribute to innovative game development projects and cross-cultural
+            technology solutions.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-card border border-border rounded-lg p-6 mb-8">
+        <h3 class="text-lg font-semibold mb-4">Key Coursework</h3>
+        <p class="text-sm text-muted-foreground mb-4">Comprehensive computer science curriculum</p>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h4 class="font-medium mb-3">Core Computer Science</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 text-xs border border-border rounded">Data Structures</span>
+              <span class="px-2 py-1 text-xs border border-border rounded">Analysis of Algorithms</span>
+              <span class="px-2 py-1 text-xs border border-border rounded">Software Engineering I & II</span>
+              <span class="px-2 py-1 text-xs border border-border rounded">Operating Systems I & II</span>
+              <span class="px-2 py-1 text-xs border border-border rounded">Database Management Systems</span>
+              <span class="px-2 py-1 text-xs border border-border rounded">Computer Networks</span>
+              <span class="px-2 py-1 text-xs border border-border rounded">Computer Architecture</span>
+              <span class="px-2 py-1 text-xs border border-border rounded">Digital Logic Design</span>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-medium mb-3">Specialized Areas</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 text-xs border border-border rounded">Web Development</span>
+              <span class="px-2 py-1 text-xs border border-border rounded">Introduction to Security</span>
+              <span class="px-2 py-1 text-xs border border-border rounded">Usability Engineering</span>
+              <span class="px-2 py-1 text-xs border border-border rounded">Open Source Software</span>
+              <span class="px-2 py-1 text-xs border border-border rounded">Theory of Computation</span>
+              <span class="px-2 py-1 text-xs border border-border rounded">Programming Language Fundamentals</span>
+              <span class="px-2 py-1 text-xs border border-border rounded">Senior Capstone</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-card border border-border rounded-lg p-6">
+          <div class="flex items-center gap-2 mb-4">
+            <i data-lucide="flask-conical" class="w-5 h-5"></i>
+            <h3 class="text-lg font-semibold">Research Focus</h3>
+          </div>
+          <p class="text-muted-foreground">
+            Environmental IoT systems and sensor networks through my work with the OPEnS Lab at Oregon State University.
+          </p>
+        </div>
+
+        <div class="bg-card border border-border rounded-lg p-6">
+          <div class="flex items-center gap-2 mb-4">
+            <i data-lucide="gamepad-2" class="w-5 h-5"></i>
+            <h3 class="text-lg font-semibold">Creative Passion</h3>
+          </div>
+          <p class="text-muted-foreground">
+            Game development with focus on narrative design, character-driven mechanics, and immersive storytelling experiences.
+          </p>
+        </div>
+
+        <div class="bg-card border border-border rounded-lg p-6">
+          <div class="flex items-center gap-2 mb-4">
+            <i data-lucide="languages" class="w-5 h-5"></i>
+            <h3 class="text-lg font-semibold">Cultural Bridge</h3>
+          </div>
+          <p class="text-muted-foreground">
+            Combining technical expertise with Japanese language skills to create cross-cultural technology solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

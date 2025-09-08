@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - David Saucier</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: '#ffffff',
+            foreground: '#475569',
+            card: '#ecfeff',
+            'card-foreground': '#164e63',
+            primary: '#164e63',
+            'primary-foreground': '#ffffff',
+            secondary: '#ea580c',
+            'secondary-foreground': '#ffffff',
+            muted: '#fefce8',
+            'muted-foreground': '#4b5563',
+            accent: '#ea580c',
+            'accent-foreground': '#ffffff',
+            border: '#e2e8f0',
+            input: '#f0f4f8',
+            ring: '#a0aec0'
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="min-h-screen bg-background">
+  <!-- Header -->
+  <header class="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4">
+      <nav class="flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 px-3 py-1 text-sm font-medium text-foreground hover:text-primary transition-colors">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+          Back to Home
+        </a>
+        <h1 class="text-2xl font-bold text-card-foreground">Projects</h1>
+        <div class="w-24"></div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Projects Content -->
+  <section class="py-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold mb-4">My Projects</h1>
+        <p class="text-xl text-muted-foreground">
+          A showcase of my work in IoT development, game design, and academic achievements
+        </p>
+      </div>
+
+      <div class="grid gap-8">
+        <!-- LOOM Project - Featured -->
+        <div class="bg-card border border-primary/20 rounded-lg p-6">
+          <div class="flex items-start justify-between mb-6">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <i data-lucide="flask-conical" class="w-6 h-6"></i>
+                <h2 class="text-2xl font-bold">LOOM Arduino Library</h2>
+              </div>
+              <p class="text-lg text-muted-foreground mb-2">
+                Modular IoT sensor and actuator systems for environmental research
+              </p>
+              <div class="flex items-center gap-4 text-sm text-muted-foreground">
+                <div class="flex items-center gap-1">
+                  <i data-lucide="calendar" class="w-4 h-4"></i>
+                  <span>September 2024 - June 2025</span>
+                </div>
+                <div class="flex items-center gap-1">
+                  <i data-lucide="users" class="w-4 h-4"></i>
+                  <span>OPEnS Lab, Oregon State University</span>
+                </div>
+              </div>
+            </div>
+            <a href="https://github.com/OPEnSLab-OSU/Loom-V4" class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors">
+              <i data-lucide="github" class="w-4 h-4"></i>
+              View on GitHub
+            </a>
+          </div>
+          <img src="LoomPicture.jpg" alt="LOOM Project Research Equipment" class="w-full h-64 object-cover rounded-md mb-6" />
+          <div class="space-y-4">
+            <p class="text-muted-foreground leading-relaxed">
+              Collaborated with a multidisciplinary team to develop LOOM, a modular and extensible Arduino library
+              designed for IoT sensor and actuator systems in environmental research. This project emphasizes
+              modularity, low-power operation, and cross-device compatibility for field research applications.
+            </p>
+            <div>
+              <h4 class="font-semibold mb-2">Key Contributions:</h4>
+              <ul class="list-disc list-inside space-y-1 text-muted-foreground">
+                <li>Contributed to system architecture and codebase using C++</li>
+                <li>Utilized Git and GitHub for version control, managing branches and pull requests</li>
+                <li>Gained hands-on experience with Arduino-based microcontrollers</li>
+                <li>Implemented sensor integration, I2C communication, and interrupt handling</li>
+                <li>Participated in sprint planning and feature discussions</li>
+                <li>Contributed well-tested Arduino code under tight deadlines</li>
+              </ul>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-sm bg-primary text-primary-foreground rounded">C++</span>
+              <span class="px-3 py-1 text-sm bg-primary text-primary-foreground rounded">Arduino</span>
+              <span class="px-3 py-1 text-sm bg-primary text-primary-foreground rounded">IoT Development</span>
+              <span class="px-3 py-1 text-sm bg-primary text-primary-foreground rounded">Git/GitHub</span>
+              <span class="px-3 py-1 text-sm bg-primary text-primary-foreground rounded">Environmental Research</span>
+              <span class="px-3 py-1 text-sm bg-primary text-primary-foreground rounded">Sensor Integration</span>
+              <span class="px-3 py-1 text-sm bg-primary text-primary-foreground rounded">Low-Power Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Indie Game Project - Featured -->
+        <div class="bg-card border border-primary/20 rounded-lg p-6">
+          <div class="flex items-start justify-between mb-6">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <i data-lucide="gamepad-2" class="w-6 h-6"></i>
+                <h2 class="text-2xl font-bold">Narrative Adventure Game</h2>
+              </div>
+              <p class="text-lg text-muted-foreground mb-2">
+                Original 9-chapter narrative adventure with unique party mechanics
+              </p>
+              <div class="flex items-center gap-4 text-sm text-muted-foreground">
+                <div class="flex items-center gap-1">
+                  <i data-lucide="calendar" class="w-4 h-4"></i>
+                  <span>2022 - Present</span>
+                </div>
+                <div class="flex items-center gap-1">
+                  <i data-lucide="users" class="w-4 h-4"></i>
+                  <span>Personal Project</span>
+                </div>
+              </div>
+            </div>
+            <a href="https://youtu.be/5RenHAticXo" class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+              Watch Demo
+            </a>
+          </div>
+          <img src="BehindTree_InGameScreenShot.png" alt="Indie Game Development Screenshot" class="w-full h-64 object-cover rounded-md mb-6" />
+          <div class="space-y-4">
+            <p class="text-muted-foreground leading-relaxed">
+              Designed and developed an original narrative adventure game with a 9-chapter structure centered on
+              emotional themes and character-driven progression. The game features a unique cast of party members,
+              each offering distinct gameplay mechanics for exploration, puzzle-solving, and combat.
+            </p>
+            <div>
+              <h4 class="font-semibold mb-2">Key Features:</h4>
+              <ul class="list-disc list-inside space-y-1 text-muted-foreground">
+                <li>Hybrid art style combining 2D pixel art characters with 3D world environments</li>
+                <li>Comprehensive game design document outlining worldbuilding and core mechanics</li>
+                <li>Functional prototype showcasing level design, combat, and NPC interactions</li>
+                <li>Party-based mechanics with unique abilities affecting traversal and puzzle-solving</li>
+                <li>Character-driven narrative with emotional themes and progression systems</li>
+                <li>Original story beats, economy design, and side content planning</li>
+              </ul>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-sm bg-primary text-primary-foreground rounded">Unreal Engine</span>
+              <span class="px-3 py-1 text-sm bg-primary text-primary-foreground rounded">Game Design</span>
+              <span class="px-3 py-1 text-sm bg-primary text-primary-foreground rounded">2D/3D Art</span>
+              <span class="px-3 py-1 text-sm bg-primary text-primary-foreground rounded">Narrative Design</span>
+              <span class="px-3 py-1 text-sm bg-primary text-primary-foreground rounded">Prototype Development</span>
+              <span class="px-3 py-1 text-sm bg-primary text-primary-foreground rounded">Character Design</span>
+              <span class="px-3 py-1 text-sm bg-primary text-primary-foreground rounded">Level Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="bg-card border border-border rounded-lg p-6">
+          <div class="flex items-center gap-2 mb-4">
+            <i data-lucide="briefcase" class="w-5 h-5"></i>
+            <h3 class="text-xl font-semibold">Student Maintenance Worker</h3>
+          </div>
+          <p class="text-muted-foreground mb-4">Oregon State University • November 2021 - August 2025</p>
+          <div class="space-y-4">
+            <p class="text-muted-foreground">
+              Applied problem-solving and technical skills in a dynamic campus maintenance environment, developing
+              transferable skills in troubleshooting, process optimization, and team collaboration.
+            </p>
+            <div>
+              <h4 class="font-semibold mb-2">Key Responsibilities & Skills Developed:</h4>
+              <ul class="list-disc list-inside space-y-1 text-muted-foreground">
+                <li>Problem solving & troubleshooting across multiple campus buildings</li>
+                <li>Process optimization to enhance response times and service quality</li>
+                <li>Team collaboration and clear communication of technical issues</li>
+                <li>Adaptability and quick learning for various repair tasks</li>
+                <li>Time management and task prioritization with multiple work orders</li>
+              </ul>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 text-xs border border-border rounded">Problem Solving</span>
+              <span class="px-2 py-1 text-xs border border-border rounded">Process Optimization</span>
+              <span class="px-2 py-1 text-xs border border-border rounded">Team Collaboration</span>
+              <span class="px-2 py-1 text-xs border border-border rounded">Time Management</span>
+              <span class="px-2 py-1 text-xs border border-border rounded">Adaptability</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic Achievement -->
+        <div class="bg-card border border-border rounded-lg p-6">
+          <div class="flex items-center gap-2 mb-4">
+            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+            <h3 class="text-xl font-semibold">Academic Excellence at Oregon State University</h3>
+          </div>
+          <p class="text-muted-foreground mb-4">Bachelor of Science in Computer Science • 2020-2025</p>
+          <img src="OsuImage.jpg" alt="Oregon State University Campus" class="w-full h-48 object-cover rounded-md mb-4" />
+          <div class="space-y-4">
+            <p class="text-muted-foreground">
+              Pursuing comprehensive computer science education with Honor Roll achievement, combining technical
+              coursework with extensive Japanese language and cultural studies.
+            </p>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <h4 class="font-semibold mb-2">Academic Highlights:</h4>
+                <ul class="list-disc list-inside space-y-1 text-muted-foreground text-sm">
+                  <li>Honor Roll Winter 2025</li>
+                  <li>Comprehensive CS curriculum completion</li>
+                  <li>Japanese language studies (Second through Third-Year)</li>
+                  <li>Cultural studies integration</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">Key Coursework:</h4>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-1 text-xs border border-border rounded">Data Structures</span>
+                  <span class="px-2 py-1 text-xs border border-border rounded">Algorithms</span>
+                  <span class="px-2 py-1 text-xs border border-border rounded">Software Engineering</span>
+                  <span class="px-2 py-1 text-xs border border-border rounded">Operating Systems</span>
+                  <span class="px-2 py-1 text-xs border border-border rounded">Database Systems</span>
+                  <span class="px-2 py-1 text-xs border border-border rounded">Computer Networks</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
