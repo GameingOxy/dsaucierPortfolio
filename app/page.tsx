@@ -42,7 +42,7 @@ export default function Portfolio() {
         <div className="container mx-auto text-center max-w-4xl">
           <div className="mb-8">
             <img
-              src="DavyPortrait.png"
+              src="public/DavyPortrait.png"
               alt="David Saucier Profile"
               className="w-32 h-32 object-cover rounded-full mx-auto mb-6 border-4 border-primary/20"
             />
@@ -174,7 +174,7 @@ export default function Portfolio() {
                 <CardDescription>OPEnS Lab Research Project (Sep 2024 - Jun 2025)</CardDescription>
               </CardHeader>
               <CardContent>
-                <img src="LoomPicture.jpg" alt="LOOM Project" className="w-full h-48 object-cover rounded-md mb-4" />
+                <img src="public/LoomPicture.jpg" alt="LOOM Project" className="w-full h-48 object-cover rounded-md mb-4" />
                 <p className="text-muted-foreground mb-4">
                   Collaborated with a multidisciplinary team to develop LOOM, a modular and extensible Arduino library
                   for IoT sensor and actuator systems in environmental research. Contributed to system architecture
@@ -211,7 +211,7 @@ export default function Portfolio() {
               </CardHeader>
               <CardContent>
                 <img
-                  src="/BehindTree_InGameScreenShot.png"
+                  src="public/BehindTree_InGameScreenShot.png"
                   alt="Indie Game Project"
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
@@ -241,7 +241,7 @@ export default function Portfolio() {
               </CardHeader>
               <CardContent>
                 <img
-                  src="OsuImage.jpg"
+                  src="public/OsuImage.jpg"
                   alt="OSU Campus"
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
