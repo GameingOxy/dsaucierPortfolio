@@ -44,6 +44,132 @@ export default function Projects() {
           </div>
 
           <div className="grid gap-8">
+            {/* Dark Aviary */}
+            <Card className="border-primary/20">
+              <CardHeader>
+                <div className="flex items-start justify-between">
+                  <div>
+                    <CardTitle className="flex items-center gap-2 text-2xl">
+                      <Gamepad2 className="w-6 h-6" />
+                      Dark Aviary
+                    </CardTitle>
+                    <CardDescription className="text-lg mt-2">
+                      A third-person hardcore horror game blending tension, atmosphere, and survival
+                    </CardDescription>
+                    <div className="flex items-center gap-4 mt-2 text-sm text-muted-foreground">
+                      <div className="flex items-center gap-1">
+                        <Calendar className="w-4 h-4" />
+                        <span>2025 - Present</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <Users className="w-4 h-4" />
+                        <span>Aviary Productions • AI Designer</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <img
+                  src="public/DarkAviaryCover.jpg"
+                  alt="Dark Aviary Horror Game Concept Art"
+                  className="w-full h-64 object-cover rounded-md mb-6"
+                />
+                <div className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Dark Aviary is a third-person survival horror experience set in a decaying world overrun by a viral
+                    outbreak that mutates humans into grotesque, birdlike creatures. Players step into the role of Ben —
+                    a skilled weaponsmith fighting to survive while searching for his family amid chaos. The game
+                    combines claustrophobic tension with intricate weapon crafting and environmental storytelling.
+                  </p>
+                  <div>
+                    <h4 className="font-semibold mb-2">Key Features:</h4>
+                    <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                      <li>AI-driven encounter design focused on adaptive horror pacing</li>
+                      <li>Weapon customization and repair systems integrated into survival gameplay</li>
+                      <li>Dynamic lighting and sound systems inspired by <i>Dead Space</i> and <i>Metro</i></li>
+                      <li>In-depth lore exploring human obsession and nature’s reclamation</li>
+                      <li>Mid-production with narrative, AI design, and level scripting in active development</li>
+                    </ul>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge>Unreal Engine 5</Badge>
+                    <Badge>AI Design</Badge>
+                    <Badge>Horror</Badge>
+                    <Badge>Level Design</Badge>
+                    <Badge>System Design</Badge>
+                    <Badge>Production</Badge>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Cicada */}
+            <Card className="border-primary/20">
+              <CardHeader>
+                <div className="flex items-start justify-between">
+                  <div>
+                    <CardTitle className="flex items-center gap-2 text-2xl">
+                      <Gamepad2 className="w-6 h-6" />
+                      Cicada
+                    </CardTitle>
+                    <CardDescription className="text-lg mt-2">
+                      A solo indie 3D action platformer where recoil becomes your movement
+                    </CardDescription>
+                    <div className="flex items-center gap-4 mt-2 text-sm text-muted-foreground">
+                      <div className="flex items-center gap-1">
+                        <Calendar className="w-4 h-4" />
+                        <span>2024 - Present</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <Users className="w-4 h-4" />
+                        <span>Solo Indie Project</span>
+                      </div>
+                    </div>
+                  </div>
+                  <Button asChild>
+                    <a href="#" className="flex items-center gap-2">
+                      <ExternalLink className="w-4 h-4" />
+                      Coming Soon
+                    </a>
+                  </Button>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <img
+                  src="public/CicadaScreenshot.jpg"
+                  alt="Cicada Game Screenshot"
+                  className="w-full h-64 object-cover rounded-md mb-6"
+                />
+                <div className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Cicada is a solo-developed indie action platformer inspired by retro Japanese aesthetics. Players use
+                    gun recoil to propel themselves through procedurally generated environments, where every shot doubles
+                    as both weapon and movement. Featuring physics-based traversal, roguelike relic systems, and stylish
+                    world design, <i>Cicada</i> turns mobility into art.
+                  </p>
+                  <div>
+                    <h4 className="font-semibold mb-2">Core Systems:</h4>
+                    <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                      <li>Recoil-based traversal combining combat and mobility</li>
+                      <li>Procedural level generation with dynamic relic modifiers</li>
+                      <li>Boss encounters tied to challenge portals and in-world lore</li>
+                      <li>Vending machine AI shopkeepers with unique personalities</li>
+                      <li>Developed in Unreal Engine 5 targeting a 2026 demo release</li>
+                    </ul>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge>Unreal Engine 5</Badge>
+                    <Badge>Solo Development</Badge>
+                    <Badge>Roguelike</Badge>
+                    <Badge>Physics Traversal</Badge>
+                    <Badge>Game Design</Badge>
+                    <Badge>Procedural Generation</Badge>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            
             {/* LOOM Project - Featured */}
             <Card className="border-primary/20">
               <CardHeader>
