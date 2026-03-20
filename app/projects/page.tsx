@@ -128,9 +128,9 @@ export default function Projects() {
                     </div>
                   </div>
                   <Button asChild>
-                    <a href="#" className="flex items-center gap-2">
+                    <a href="https://www.youtube.com/playlist?list=PLjw6GojntOXi8buE-ohfM6gfR2tEXXo17" className="flex items-center gap-2">
                       <ExternalLink className="w-4 h-4" />
-                      Coming Soon
+                      Watch Dev Footage
                     </a>
                   </Button>
                 </div>
