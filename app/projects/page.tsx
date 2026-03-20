@@ -128,11 +128,11 @@ export default function Projects() {
                     </div>
                   </div>
                   <Button asChild>
-                  <a href="https://www.youtube.com/playlist?list=PLjw6GojntOXi8buE-ohfM6gfR2tEXXo17" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                    <ExternalLink className="w-4 h-4" />
-                    Watch Dev Progress
-                  </a>
-                </Button>
+                    <a href="https://www.youtube.com/playlist?list=PLjw6GojntOXi8buE-ohfM6gfR2tEXXo17" className="flex items-center gap-2">
+                      <Github className="w-4 h-4" />
+                      Watch Development Gameplay
+                    </a>
+                  </Button>
                 </div>
               </CardHeader>
               <CardContent>
